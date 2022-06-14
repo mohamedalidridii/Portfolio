@@ -1,0 +1,27 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Med Ali's website",
+
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Med Ali Dridi",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.3.11",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "eslint-config-next": "^12.1.6",
+    "prettier": "^2.7.0"
+  }
+}
