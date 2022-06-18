@@ -16,7 +16,7 @@ const Page = () =>{
             </Box>
 
             <Box display={{md:'flex'}}>
-                <Box flexGrow={1}>
+                <Box flexGrow={1} style={{zIndex:1}}>
                     <Heading as="h2" variant="page-title">
                         Mohamed Ali Dridi
                     </Heading>

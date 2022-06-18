@@ -3,32 +3,39 @@ import { Box, Spinner } from "@chakra-ui/react";
 import * as THREE from "three"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel} from "../lib/model"
-import { Camera } from "three";
 
 function easeOutCirc(x) {
-    return Math.sqrt(1 - Math.pow(x-1, 4))
+    return Math.sqrt(1 - Math.pow(x-1, 6))
 }
-const Head = () => {
+const HeadModel = () => {
     const refContainer = useRef()
-    const [loading, setLoading]= useState(true)
+    const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
     const [_camera, setCamera] = useState()
     const [target] = useState(new THREE.Vector3(0, 0, 0))
     const [initialCameraPosition] = useState(
-        new THREE.Vector3(
-            500 * Math.sin (0.2 * Math.PI),
-            10,
-            20 * Math.cos(0.2 * Math.PI)
+      new THREE.Vector3(
+        20 * Math.sin(0.2 * Math.PI),
+        10,
+        20 * Math.cos(0.2 * Math.PI)
         )
     )
     const [scene] = useState(new THREE.Scene())
     const [_controls, setControls] = useState()
 
-
+    const handleWindowResize = useCallback(() => {
+        const { current: container } = refContainer
+        if (container && renderer) {
+          const scW = container.clientWidth
+          const scH = container.clientHeight
+    
+          renderer.setSize(scW, scH)
+        }}, [renderer])
     /* eslint-disable react-hooks/exhaustive-deps */
+
     useEffect(() => {
         const { current: container} = refContainer
-        if (container && ! renderer){
+        if (container && !renderer){
             const scW = container.clientWidth
             const scH = container.clientHeight
             const renderer = new THREE.WebGLRenderer({
@@ -39,19 +46,19 @@ const Head = () => {
             renderer.setSize(scW, scH)
             renderer.outputEncoding = THREE.sRGBEncoding
             container.appendChild(renderer.domElement)
-            setRenderer.apply(renderer)
+            setRenderer(renderer)
 
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.0005 + 0.001
+            const scale = scH * 0.001 + 0.001
             const camera = new THREE.OrthographicCamera(
-                -scale, scale, scale, -scale, 0.005, 30000
+                scale, -scale, scale, -scale, 0.001, 30000
             )
             camera.position.copy(initialCameraPosition)
             camera.lookAt(target)
             setCamera(camera)
 
-            const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+            const ambientLight = new THREE.AmbientLight(0xffffff, 1)
             scene.add(ambientLight)
             const controls = new OrbitControls (camera, renderer.domElement)
             controls.autoRotate = true
@@ -59,8 +66,8 @@ const Head = () => {
             setControls(controls)
 
             loadGLTFModel(scene, '/portfolioProfile.glb', {
-                receiveShadow: true,
-                castShadow: true,
+                receiveShadow: false,
+                castShadow: false,
             }).then(() => {
                 animate()
                 setLoading(false)
@@ -73,12 +80,13 @@ const Head = () => {
 
                 if(frame <= 100){
                     const p = initialCameraPosition
-                    const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 1
+                    const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
 
-                    camera.position.y = 1
-                    camera.position.x = p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
-                    camera.position.z = p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
-                    camera.lookAt(target)
+                    camera.position.y = 5
+                    camera.position.x = 
+                    p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
+                    camera.position.z = 
+                    p.z * Math.cos(rotSpeed) - p.x * Math.sin(rotSpeed)
                 } else {
                     controls.update()
                 }
@@ -86,21 +94,30 @@ const Head = () => {
             }
             return () => {
                 cancelAnimationFrame(req)
-                renderer.dispose
+                renderer.dispose()
             }
 
         }
     }, [])
-    return <Box ref={refContainer} className="head-model" m="auto" 
-    at={['-20px', '-60px', '-120px']}
-    mb={['-20px', '-14px', '40px']}
-    w={[280, 480, 640]}
-    h={[280, 480, 640]}
-    position='relative'
+    
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize, false)
+        return () => {
+          window.removeEventListener('resize', handleWindowResize, false)
+        }
+      }, [renderer, handleWindowResize])
+
+
+    return (<Box ref={refContainer} className="head-model" m="auto" 
+    mt={['-20px', '-60px', '-140px']}
+    mb={['-20px', '-140px', '-200px']}
+    w={[280, 280, 680]}
+    h={[280, 280, 680]}
+    position="relative"
     >
         {loading && (
             <Spinner size="xl" position="absolute" left="50%" top="50%" ml="calc(0px - var(--spinner-size) / 2" mt="calc(0px- var(--spinner-size)" />
         )}
         </Box>
-}
-export default Head
+)}
+export default HeadModel

@@ -12,11 +12,13 @@ const Main = ({ children, router}) => {
             </Head>
             <Navbar path={router.asPath}/>
             <Container maxW="container.md" pt={14}>
-                <NoSsr>
-                <HeadModel />
-                </NoSsr>
+            <NoSsr>
+                <HeadModel style={{zIndex:-1}}/>
+            </NoSsr>
                 {children}
+                
             </Container>
+
         </Box>
     )
 }
