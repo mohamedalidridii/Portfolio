@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Box, Spinner } from "@chakra-ui/react";
+import { Box, Spinner, useColorModeValue } from "@chakra-ui/react";
 import * as THREE from "three"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel} from "../lib/model"
 
 function easeOutCirc(x) {
-    return Math.sqrt(1 - Math.pow(x-1, 6))
+    return Math.sqrt(1 - Math.pow(x-1, 4))
 }
 const HeadModel = () => {
     const refContainer = useRef()
@@ -15,9 +15,9 @@ const HeadModel = () => {
     const [target] = useState(new THREE.Vector3(0, 0, 0))
     const [initialCameraPosition] = useState(
       new THREE.Vector3(
-        20 * Math.sin(0.2 * Math.PI),
-        10,
-        20 * Math.cos(0.2 * Math.PI)
+        20 * Math.sin(0.8 * Math.PI),
+        0,
+        20 * Math.cos(1* Math.PI)
         )
     )
     const [scene] = useState(new THREE.Scene())
@@ -32,7 +32,7 @@ const HeadModel = () => {
           renderer.setSize(scW, scH)
         }}, [renderer])
     /* eslint-disable react-hooks/exhaustive-deps */
-
+    const headModel = `/portfolioProfile${useColorModeValue('', '4')}.glb`
     useEffect(() => {
         const { current: container} = refContainer
         if (container && !renderer){
@@ -50,7 +50,8 @@ const HeadModel = () => {
 
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.001 + 0.001
+            const scale = scH * 0.0005 + 0.001
+            
             const camera = new THREE.OrthographicCamera(
                 scale, -scale, scale, -scale, 0.001, 30000
             )
@@ -58,16 +59,16 @@ const HeadModel = () => {
             camera.lookAt(target)
             setCamera(camera)
 
-            const ambientLight = new THREE.AmbientLight(0xffffff, 1)
+            const ambientLight = new THREE.AmbientLight(0xcccccc, 5)
             scene.add(ambientLight)
             const controls = new OrbitControls (camera, renderer.domElement)
             controls.autoRotate = true
             controls.target = target
             setControls(controls)
-
-            loadGLTFModel(scene, '/portfolioProfile.glb', {
-                receiveShadow: false,
-                castShadow: false,
+            
+            loadGLTFModel(scene, headModel, {
+                receiveShadow: true,
+                castShadow: true,
             }).then(() => {
                 animate()
                 setLoading(false)
@@ -80,9 +81,9 @@ const HeadModel = () => {
 
                 if(frame <= 100){
                     const p = initialCameraPosition
-                    const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
+                    const rotSpeed = -easeOutCirc(frame / 100) * Math.PI * 10
 
-                    camera.position.y = 5
+                    camera.position.y = 0
                     camera.position.x = 
                     p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
                     camera.position.z = 
@@ -108,12 +109,16 @@ const HeadModel = () => {
       }, [renderer, handleWindowResize])
 
 
-    return (<Box ref={refContainer} className="head-model" m="auto" 
-    mt={['-20px', '-60px', '-140px']}
-    mb={['-20px', '-140px', '-200px']}
-    w={[280, 280, 680]}
-    h={[280, 280, 680]}
-    position="relative"
+    return (<Box ref={refContainer} className="head-model" 
+    zIndex={-1}
+    mt={["1.5rem", '-3.75rem', '-33.75rem']}
+    mb={['0rem', '-8.75rem', '0rem']}
+    w={["100vw", "30rem", "35rem"]}
+    h={["80vh", "30rem", "35rem"]}
+    position='fixed'
+    left={['-1rem', "10vw", "30vw"]}
+    top={['-79vh', 10, "5vh"]}
+
     >
         {loading && (
             <Spinner size="xl" position="absolute" left="50%" top="50%" ml="calc(0px - var(--spinner-size) / 2" mt="calc(0px- var(--spinner-size)" />
