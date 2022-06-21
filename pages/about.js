@@ -42,7 +42,7 @@ const Page = () =>{
                     Work
                 </Heading>
                 <Paragraph >
-                My name is Mohamed Ali Dridi and I describe myself as a CREATIVE DEVELOPER based and somebody has the skills,
+                My name is Mohamed Ali Dridi and I describe myself as a Creative Developer based and somebody has the skills,
                     qualities and Imagination to match with your needs.</Paragraph>
                     <br/>
                 <Paragraph>As a developer, my expertise includes React, javascript, webgl, python, 
@@ -50,7 +50,7 @@ const Page = () =>{
                     along with CSS. Everything a web based project might need.</Paragraph>
                     <br/>
                     <Paragraph>For video processing I have scripting in ffMPEG, Blender, After Effect and Cinema4D. 3D modeling in Cinema4D, Blender enable me to work
-                        with all facets of the creative pipeline
+                        with all facets of the creative pipeline.
                     </Paragraph>
                     <br/>
                 <Paragraph>My life long love of coding has promoted a career from 
@@ -72,7 +72,7 @@ const Page = () =>{
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    Completed the Bachelor&apos;s degree of science in Mechatronics Engineering at 
+                    Completed the Bachelor&apos;s of science in Mechatronics Engineering at 
                     The Private Higher School of Engineering and Technology - ESPRIT
                 </BioSection>
                 <BioSection>

@@ -13,7 +13,24 @@ const Works= () => {
             <Heading as="h3" fontSize={20}  mt={14}>
                 Works
             </Heading>
-            <SimpleGrid columns={[1,1,2]} gap={6} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={12} mt={9} style={{backdropFilter: 'blur(100px)'}}>
+            <SimpleGrid columns={[1,1,2]} gap={6} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={6} mt={9} style={{backdropFilter: 'blur(100px)'}}>
+                <Section>
+                    <WorkGridItem id="brides_secrets" title="Bride&apos;s Secrets" thumbnail={ThumbBridesSecrets}>
+                         A portfolio app connected with content management system 
+                         to create, modify or delete a product.
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="tazuri" title="Tazuri" thumbnail={ThumbTazuri}>
+                         A portfolio app connected with content management system 
+                         to create, modify or delete a product.
+                    </WorkGridItem>
+                </Section>
+            </SimpleGrid>
+            <Heading as="h3" fontSize={20}  mt={14}>
+                Video Processing
+            </Heading>
+            <SimpleGrid columns={[1,1,2]} gap={6} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={6} mt={9} style={{backdropFilter: 'blur(100px)'}}>
                 <Section>
                     <WorkGridItem id="brides_secrets" title="Bride&apos;s Secrets" thumbnail={ThumbBridesSecrets}>
                          A portfolio app connected with content management system 

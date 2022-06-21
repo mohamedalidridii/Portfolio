@@ -1,6 +1,6 @@
 
-import { Container, Box, Heading, Button  } from "@chakra-ui/react";
-
+import { Container, Box, Heading, Button } from "@chakra-ui/react";
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoFacebook, IoLogoLinkedin } from 'react-icons/io5'
 import NextLink from 'next/link';
 
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -27,7 +27,9 @@ const Page = () =>{
                             My Portfolio
                             </Button></NextLink>    
                 </Box> 
-
+                
+          
+          
         </Container>
         </Layout>
     )}
