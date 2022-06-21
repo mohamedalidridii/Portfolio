@@ -1,5 +1,5 @@
 
-import { Container, Heading, SimpleGrid, Divider, useColorModeValue } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, useColorModeValue } from "@chakra-ui/react";
 import Section from "../components/section";
 import { WorkGridItem } from "../components/grid-item";
 import ThumbBridesSecrets from "../public/images/ThumbBridesSecrets.jpg";
@@ -13,9 +13,9 @@ const Works= () => {
             <Heading as="h3" fontSize={20}  mt={14}>
                 Works
             </Heading>
-            <SimpleGrid columns={[1,1,2]} gap={6} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={5} mt={9} style={{backdropFilter: 'blur(100px)'}}>
+            <SimpleGrid columns={[1,1,2]} gap={6} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={12} mt={9} style={{backdropFilter: 'blur(100px)'}}>
                 <Section>
-                    <WorkGridItem id="bridessecrets" title="Bride&apos;s Secrets" thumbnail={ThumbBridesSecrets}>
+                    <WorkGridItem id="brides_secrets" title="Bride&apos;s Secrets" thumbnail={ThumbBridesSecrets}>
                          A portfolio app connected with content management system 
                          to create, modify or delete a product.
                     </WorkGridItem>

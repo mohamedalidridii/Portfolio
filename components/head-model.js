@@ -8,6 +8,7 @@ function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x-1, 4))
 }
 const HeadModel = () => {
+    const headModel =`/portfolioProfile${useColorModeValue('', '4')}.glb`
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
@@ -32,7 +33,9 @@ const HeadModel = () => {
           renderer.setSize(scW, scH)
         }}, [renderer])
     /* eslint-disable react-hooks/exhaustive-deps */
-    const headModel = `/portfolioProfile${useColorModeValue('', '4')}.glb`
+
+    
+    
     useEffect(() => {
         const { current: container} = refContainer
         if (container && !renderer){
