@@ -2,6 +2,6 @@ import styled from "@emotion/styled";
 
 const Paragraph = styled.p`
 text-align: justify;
-text-indent: 2rem;
+text-indent: 3rem;
 `
 export default Paragraph

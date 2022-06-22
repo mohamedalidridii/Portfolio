@@ -6,13 +6,13 @@ import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
 import Layout from "../components/layouts/article";
-
+import ReactCountryFlag from "react-country-flag"
 const Page = () =>{
     return (
         <Layout >
         <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={2} mt={9} style={{backdropFilter: 'blur(100px)'}} zIndex={1}>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.500')} p={3} mb={6} mt={9} align="center" >
-            Hello, I&apos;m a Full Stack Web Developer based in Tunisia 
+            Hello, I&apos;m a Full Stack Web Developer based in Tunisia <ReactCountryFlag countryCode="TN"/>
             </Box>
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1} style={{zIndex:1}}>

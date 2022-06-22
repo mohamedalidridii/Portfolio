@@ -1,5 +1,5 @@
 
-import { Container, Box, Heading, Button } from "@chakra-ui/react";
+import { Container, Box, Heading, Button, useColorModeValue, Flex } from "@chakra-ui/react";
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoFacebook, IoLogoLinkedin } from 'react-icons/io5'
 import NextLink from 'next/link';
 
@@ -23,10 +23,33 @@ const Page = () =>{
                     <NextLink href="/works">
                         <Button
                         rightIcon={<ChevronRightIcon />} 
-                        colorScheme="teal">
+                        bg={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}
+                        color={useColorModeValue('white', 'black')}>
                             My Portfolio
                             </Button></NextLink>    
-                </Box> 
+                </Box>
+                <Box gap={3} mt={"15vh"} >
+                <Flex gap={10} align="center" justify="center" >
+                        <NextLink href="https://www.linkedin.com/in/med-ali-dridi/">
+                    <IoLogoLinkedin color={useColorModeValue('white', 'white')} size={30} opacity={0.8}/>
+                        </NextLink>  
+                        <NextLink href="https://github.com/mohamedalidridii">
+                    <IoLogoGithub color={useColorModeValue('white', 'white')} size={30} opacity={0.8}/>
+                        </NextLink>                              
+                </Flex>
+                <Flex gap={10}  align="center" justify="center" mt={"3vh"}>
+                    
+                        <NextLink href="https://www.facebook.com/daly.19435/">
+                    <IoLogoFacebook color={useColorModeValue('white', 'white')} size={30} opacity={0.8}/>
+                        </NextLink>
+                        <NextLink href="https://twitter.com/daly4111">
+                    <IoLogoTwitter color={useColorModeValue('white', 'white')} size={30} opacity={0.8}/>
+                        </NextLink>
+                        <NextLink href="https://www.instagram.com/medaly.dridi/">
+                    <IoLogoInstagram color={useColorModeValue('white', 'white')} size={30} opacity={0.8}/>
+                        </NextLink>
+                </Flex>
+                </Box>
                 
           
           
