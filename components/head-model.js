@@ -119,8 +119,8 @@ const HeadModel = () => {
     w={["100vw", "30rem", "35rem"]}
     h={["80vh", "30rem", "35rem"]}
     position='fixed'
-    left={['0', "30vw", "30vw"]}
-    top={['10vh', 10, "10vh"]}
+    left={['5vw', "30vw", "30vw"]}
+    top={['10vh', 10, "5vh"]}
 
     >
         {loading && (
