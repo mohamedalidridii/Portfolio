@@ -18,7 +18,7 @@ padding: 1.3rem;
 const Logo = () => {
     const logoImg = `/images/lgb${useColorModeValue('', 'w')}.png`
     return (
-        <Link href="/">
+        <Link href="/" passHref>
             <a>
                 <LogoBox>
                     <Image src= {logoImg} width={40} height={30} alt="logo"/>

@@ -113,7 +113,7 @@ const HeadModel = () => {
 
 
     return (<Box ref={refContainer} className="head-model" 
-    zIndex={-1}
+    style={{zIndex:"-1"}}
     mt={["1.5rem", '-3.75rem', '-33.75rem']}
     mb={['0rem', '-8.75rem', '0rem']}
     w={["100vw", "30rem", "35rem"]}

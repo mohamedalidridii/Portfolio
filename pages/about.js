@@ -10,16 +10,16 @@ import ReactCountryFlag from "react-country-flag"
 const Page = () =>{
     return (
         <Layout >
-        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={2} mt={9} style={{backdropFilter: 'blur(100px)'}} zIndex={1}>
+        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.100')} p={2} mt={9} style={{backdropFilter: 'blur(100px)'}} >
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.500')} p={3} mb={6} mt={9} align="center" >
             Hello, I&apos;m a Full Stack Web Developer based in Tunisia <ReactCountryFlag countryCode="TN"/>
             </Box>
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1} style={{zIndex:1}}>
-                    <Heading as="h2" variant="page-title" position="relative" align={["center", "left", "left"]}>
+                    <Heading as="h2" variant="page-title" position="relative" align="center">
                         Mohamed Ali Dridi
                     </Heading>
-                    <p >3D Artist | Technologist | Developer</p>
+                    <p align="center">3D Artist | Technologist | Developer</p>
                 </Box>
                 <Box flexShrink={0}
                 mt={{base:8, md: 0}} 
@@ -42,19 +42,19 @@ const Page = () =>{
                     Work
                 </Heading>
                 <Paragraph >
-                My name is Mohamed Ali Dridi and I describe myself as a Creative Developer based and somebody has the skills,
+                My name is Mohamed Ali Dridi and I describe myself as a Creative Developer based in Tunisia and somebody has the skills,
                     qualities and Imagination to match with your needs.</Paragraph>
                     <br/>
-                <Paragraph>As a developer, my expertise includes React, javascript, webgl, python, 
+                <p>As a developer, my expertise includes React, javascript, webgl, python, 
                     node and a wide range of related frameworks and libraries, I have years of experience with Three.js and WebGL,
-                    along with CSS. Everything a web based project might need.</Paragraph>
+                    along with CSS. Everything a web based project might need.</p>
                     <br/>
-                    <Paragraph>For video processing I have scripting in ffMPEG, Blender, After Effect and Cinema4D. 3D modeling in Cinema4D, Blender enable me to work
+                    <p>For video processing I have scripting in ffMPEG, Blender, After Effect and Cinema4D. 3D modeling in Cinema4D, Blender enable me to work
                         with all facets of the creative pipeline.
-                    </Paragraph>
+                    </p>
                     <br/>
-                <Paragraph>My life long love of coding has promoted a career from 
-                    Mechanics Engineering to IT Engineering.</Paragraph>
+                <p>My life long love of coding has promoted a career from 
+                    Mechanics Engineering to IT Engineering.</p>
                 <Box align="center" my={4}>
                     <NextLink href="/works">
                         <Button
