@@ -114,7 +114,7 @@ const HeadModel = () => {
 
     return (<Box ref={refContainer} className="head-model" 
     style={{zIndex:"-1"}}
-    mt={["1.5rem", '-3.75rem', '-33.75rem']}
+    mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
     w={["100vw", "30rem", "35rem"]}
     h={["80vh", "30rem", "35rem"]}
