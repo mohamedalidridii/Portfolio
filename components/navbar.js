@@ -47,6 +47,7 @@ const Navbar = props => {
                 width={{base:'full', md:'auto'}}
                 alignItems="center"
                 flexGrow={1}
+                gap={5}
                 mt={{ base: 4, nmd: 0}}>
                     <LinkItem href="/about" path={path}>Abouts</LinkItem>
                     <LinkItem href="/works" path={path}>Works</LinkItem>
