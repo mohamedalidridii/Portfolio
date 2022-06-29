@@ -63,7 +63,7 @@ const Works= () => {
                 <List ml={4} my={4}>
                      <ListItem>
                         <Meta>more</Meta>
-                        <Link href="https://www.behance.net/DALY3DESIGN">More about 3D stuff <ExternalLinkIcon mx="2px"/></Link>
+                        <Link href="https://www.behance.net/DALY3DESIGN">Discover more 3D renderings <ExternalLinkIcon mx="2px"/></Link>
                      </ListItem>
                 </List>
         {/* <WorkImage src="./images/works/head/portfolio1.png" alt="Head 1" />

@@ -1,19 +1,19 @@
 
 import { Box, Button, useColorModeValue } from "@chakra-ui/react";
 import Link from 'next/link';
-import {ChevronLeftIcon } from "@chakra-ui/icons";
+import {ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 
 const Interaction = () =>{
     return (
         <Layout>
                         <Box align="center" position="relative" top={"70vh"}>
-                    <Link href="/">
+                    <Link href="/works">
                         <Button
-                        leftIcon={<ChevronLeftIcon />} 
-                        bg={useColorModeValue('blackAlpha.800', 'whiteAlpha.700')}
+                        rightIcon={<ChevronRightIcon />} 
+                        bg={useColorModeValue('blackAlpha.800', 'whiteAlpha.400')}
                         color={useColorModeValue('white', 'black')}>
-                            Home
+                            My portfolio
                             </Button></Link>    
                 </Box>
         </Layout>

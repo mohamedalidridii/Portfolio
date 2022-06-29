@@ -13,11 +13,11 @@ const Page = () =>{
         <Layout>
         <Container mt={40}>
             <Box display={{md:'flex'}}>
-                <Box flexGrow={1} >
-                    <Heading as="h1" variant="page-title" position="relative" align="center" style={{zIndex:"-1"}}>
+                <Box flexGrow={1}>
+                    <Heading as="h1"  variant="page-title" position="relative" align="center" style={{zIndex:"-1", fontSize:"2.2rem"}}>
                         Mohamed Ali Dridi
                     </Heading>
-                    <p  style={{zIndex:"1"}} align="center">3D Artist | Technologist | Developer</p>
+                    <p  style={{zIndex:"1", fontSize:"10px", letterSpacing:"3.5px"}} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.700')} align="center">3D Artist | Technologist | Developer</p>
                 </Box>
             </Box>
                 <Box align="center" mt={10}>

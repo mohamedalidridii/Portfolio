@@ -10,8 +10,8 @@ import ReactCountryFlag from "react-country-flag"
 const Page = () =>{
     return (
         <Layout >
-        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.100')} p={2} mt={9} style={{backdropFilter: 'blur(100px)'}} >
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.500')} p={3} mb={6} mt={9} align="center" >
+        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'blackAlpha.900')} p={2} mt={9} style={{backdropFilter: 'blur(100px)'}} >
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.200')} p={3} mb={6} mt={9} align="center" >
             Hello, I&apos;m a Full Stack Web Developer based in Tunisia <ReactCountryFlag countryCode="TN"/>
             </Box>
             <Box display={{md:'flex'}}>
@@ -59,7 +59,8 @@ const Page = () =>{
                     <NextLink href="/works">
                         <Button
                         rightIcon={<ChevronRightIcon />} 
-                        colorScheme="teal">
+                        bg={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}
+                        color={useColorModeValue('white', 'black')}>
                             My Portfolio
                             </Button></NextLink>    
                 </Box> 
