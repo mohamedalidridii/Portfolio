@@ -33,17 +33,17 @@ const Work =() => {
                      </ListItem>
                 </List>
                 <SimpleGrid columns={1} gap={4}>
-        <WorkImage src="/images/works/bridesSecrets/cms.png" alt="Content management system" />
-        <WorkImage src="/images/works/bridesSecrets/test.png" alt="test" />
-        <WorkImage src="/images/works/bridesSecrets/test1.png" alt="test1" />
+        <WorkImage src="/images/works/bridesSecrets/cms.PNG" alt="Content management system" />
+        <WorkImage src="/images/works/bridesSecrets/test.PNG" alt="test" />
+        <WorkImage src="/images/works/bridesSecrets/test1.PNG" alt="test1" />
       </SimpleGrid>
-      <WorkImage src="/images/works/bridesSecrets/phone1.png" alt="phone-1" />
-      <WorkImage src="/images/works/bridesSecrets/phone2.png" alt="phone-2" />
+      <WorkImage src="/images/works/bridesSecrets/phone1.PNG" alt="phone-1" />
+      <WorkImage src="/images/works/bridesSecrets/phone2.PNG" alt="phone-2" />
       <SimpleGrid columns={2} gap={4}>
       
 
-      <WorkImage src="/images/works/bridesSecrets/phone3.png" alt="phone-3" />
-      <WorkImage src="/images/works/bridesSecrets/phone4.png" alt="phone-4" />
+      <WorkImage src="/images/works/bridesSecrets/phone3.PNG" alt="phone-3" />
+      <WorkImage src="/images/works/bridesSecrets/phone4.PNG" alt="phone-4" />
       </SimpleGrid>
             </Container>
             <Footer/>
