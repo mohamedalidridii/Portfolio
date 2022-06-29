@@ -54,12 +54,12 @@ const Works= () => {
                         <span>Photoshop</span>
                      </ListItem>
                 </List>
-                <WorkImage src="./images/works/head/portfolio.png" alt="Head" />
-                <WorkImage src="./images/works/Tazuri/render1.jpg" alt="render-Tazuri" />
-                <WorkImage src="./images/works/procederal-lace.jpg" alt="render-Tazuri" />
-                <WorkImage src="./images/works/airPods/AP5.jpg" alt="AirPods" />
-                <WorkImage src="./images/works/GlucoseMeter/GM2.jpg" alt="Glucose Meter" />
-                <WorkImage src="./images/works/DCMotor/ThumbDCMotor1.jpg" alt="ThumbDCMotor1" />
+                <WorkImage src="./images/works/portfolio.png" alt="Head" />
+                <WorkImage src="./images/works/render1.png" alt="render-Tazuri" />
+                <WorkImage src="./images/works/procederal-lace.png" alt="render-Tazuri" />
+                <WorkImage src="./images/works/AP5.jpg" alt="AirPods" />
+                <WorkImage src="./images/works/GM2.jpg" alt="Glucose Meter" />
+                <WorkImage src="./images/works/DCMotor1.jpg" alt="DCMotor1" />
                 <List ml={4} my={4}>
                      <ListItem>
                         <Meta>more</Meta>
