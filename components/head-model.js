@@ -116,13 +116,13 @@ const HeadModel = () => {
     mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
     w={["100vw", "30rem", "100vw/5"]}
-    h={["80vh", "30rem", "25rem"]}
+    h={["80vh", "30rem", "30rem"]}
     position="absolute"
       display="flex"
     flexDirection="column"
     align="center"
     justify="center"
-    left={['-3vw', 10, "35vw"]}
+    left={['-3vw', 10, "30vw"]}
     top={['15vh', 10, "10vh"]}
 
     >
