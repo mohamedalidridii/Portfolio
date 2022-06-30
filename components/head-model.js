@@ -116,14 +116,14 @@ const HeadModel = () => {
     style={{zIndex:"-1"}}
     mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
-    w={["80vw", "30rem", "25rem"]}
-    h={["80vh", "30rem", "25rem"]}
+    w={["100vw", "30rem", "20rem"]}
+    h={["80vh", "30rem", "20rem"]}
     position="absolute"
       display="flex"
-      flexDirection="column"
+    flexDirection="column"
     align="center"
     justifyContent="center"
-    top={['20vh', 10, "20vh"]}
+    top={['15vh', 10, "15vh"]}
 
     >
         {loading && (
