@@ -16,8 +16,8 @@ const HeadModel = () => {
     const [target] = useState(new THREE.Vector3(0, 0, 0))
     const [initialCameraPosition] = useState(
       new THREE.Vector3(
-        20 * Math.sin(0.8 * Math.PI),
-        0,
+        15 * Math.sin(0.8 * Math.PI),
+        20,
         20 * Math.cos(1* Math.PI)
         )
     )
@@ -116,11 +116,14 @@ const HeadModel = () => {
     style={{zIndex:"-1"}}
     mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
-    w={["100vw", "30rem", "35rem"]}
-    h={["80vh", "30rem", "35rem"]}
-    position='fixed'
-    left={["-5vw", "20vw", "30vw"]}
-    top={['7vh', 10, "5vh"]}
+    w={["20rem", "30rem", "35rem"]}
+    h={["20rem", "30rem", "35rem"]}
+    position="absolute"
+      display="flex"
+      flexDirection="column"
+    align="center"
+    justifyContent="center"
+    top={['5vh', 10, "10vh"]}
 
     >
         {loading && (
