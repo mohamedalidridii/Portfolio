@@ -123,7 +123,7 @@ const HeadModel = () => {
       flexDirection="column"
     align="center"
     justifyContent="center"
-    top={['5vh', 10, "10vh"]}
+    top={['20vh', 10, "20vh"]}
 
     >
         {loading && (
