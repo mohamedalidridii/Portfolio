@@ -17,7 +17,7 @@ const HeadModel = () => {
     const [initialCameraPosition] = useState(
       new THREE.Vector3(
         15 * Math.sin(0.8 * Math.PI),
-        20 * Math.sin(0.8 * Math.PI),
+        25,
         20 * Math.cos(1* Math.PI)
         )
     )
@@ -65,7 +65,7 @@ const HeadModel = () => {
             const ambientLight = new THREE.AmbientLight(0xcccccc, 5)
             scene.add(ambientLight)
             const controls = new OrbitControls (camera, renderer.domElement)
-            controls.autoRotate = false
+            controls.autoRotate = true
             controls.target = target
             setControls(controls)
             
