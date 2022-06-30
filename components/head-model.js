@@ -16,8 +16,8 @@ const HeadModel = () => {
     const [target] = useState(new THREE.Vector3(0, 0, 0))
     const [initialCameraPosition] = useState(
       new THREE.Vector3(
-        15 * Math.sin(0.8 * Math.PI),
-        25,
+        90 * Math.sin(0.8 * Math.PI),
+        50,
         20 * Math.cos(1* Math.PI)
         )
     )
@@ -53,7 +53,7 @@ const HeadModel = () => {
 
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.0005 + 0.001
+            const scale = scH * 0.0007 + 0.001
             
             const camera = new THREE.OrthographicCamera(
                 scale, -scale, scale, -scale, 0.001, 30000
@@ -122,8 +122,8 @@ const HeadModel = () => {
     flexDirection="column"
     align="center"
     justify="center"
-    left={['-3vw', 10, "35vw"]}
-    top={['15vh', 10, "10vh"]}
+    left={['-3vw', "20rem", "42rem"]}
+    top={['-5vh', 10, "10vh"]}
 
     >
         {loading && (
