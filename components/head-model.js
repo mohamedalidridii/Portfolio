@@ -65,7 +65,7 @@ const HeadModel = () => {
             const ambientLight = new THREE.AmbientLight(0xcccccc, 5)
             scene.add(ambientLight)
             const controls = new OrbitControls (camera, renderer.domElement)
-            controls.autoRotate = true
+            controls.autoRotate = false
             controls.target = target
             setControls(controls)
             
