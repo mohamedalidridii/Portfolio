@@ -122,7 +122,7 @@ const HeadModel = () => {
     flexDirection="column"
     align="center"
     justify="center"
-    left={['-5vw', 10, "-25vw"]}
+    left={['-5vw', 10, "25vw"]}
     top={['15vh', 10, "20vh"]}
 
     >
