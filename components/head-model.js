@@ -117,7 +117,7 @@ const HeadModel = () => {
     mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
     w={["80vw", "30rem", "25rem"]}
-    h={["100vh", "30rem", "25rem"]}
+    h={["80vh", "30rem", "25rem"]}
     position="absolute"
       display="flex"
       flexDirection="column"
