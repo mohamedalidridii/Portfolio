@@ -17,7 +17,7 @@ const HeadModel = () => {
     const [initialCameraPosition] = useState(
       new THREE.Vector3(
         90 * Math.sin(0.8 * Math.PI),
-        50,
+        150,
         20 * Math.cos(1* Math.PI)
         )
     )
@@ -86,7 +86,7 @@ const HeadModel = () => {
                     const p = initialCameraPosition
                     const rotSpeed = -easeOutCirc(frame / 100) * Math.PI * 10
 
-                    camera.position.y = 0
+                    camera.position.y = 1
                     camera.position.x = 
                     p.x * Math.cos(rotSpeed) + p.z * Math.sin(rotSpeed)
                     camera.position.z = 
@@ -122,8 +122,8 @@ const HeadModel = () => {
     flexDirection="column"
     align="center"
     justify="center"
-    left={['-3vw', "20rem", "30rem"]}
-    top={['-5vh', 10, "10vh"]}
+    left={['-3vw', "20rem", "35vw"]}
+    top={['-5vh', 10, "2vh"]}
 
     >
         {loading && (
