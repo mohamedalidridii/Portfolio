@@ -17,7 +17,7 @@ const HeadModel = () => {
     const [initialCameraPosition] = useState(
       new THREE.Vector3(
         15 * Math.sin(0.8 * Math.PI),
-        20,
+        20 * Math.sin(0.8 * Math.PI),
         20 * Math.cos(1* Math.PI)
         )
     )
