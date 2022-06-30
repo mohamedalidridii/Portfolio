@@ -111,7 +111,6 @@ const HeadModel = () => {
         }
       }, [renderer, handleWindowResize])
 
-
     return (<Box ref={refContainer} className="head-model" 
     style={{zIndex:"-1"}}
     mt={["0rem", '-3.75rem', '0rem']}
@@ -122,8 +121,8 @@ const HeadModel = () => {
       display="flex"
     flexDirection="column"
     align="center"
-    justifyContent="center"
-    left={['-5vw', 10, "25vw"]}
+    justify="center"
+    left={['-5vw', 10, "-35vw"]}
     top={['15vh', 10, "20vh"]}
 
     >
