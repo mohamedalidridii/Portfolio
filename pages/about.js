@@ -10,7 +10,12 @@ import ReactCountryFlag from "react-country-flag"
 const Page = () =>{
     return (
         <Layout >
-        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'blackAlpha.900')} p={2} mt={9} style={{backdropFilter: 'blur(100px)'}} >
+        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.900')} p={6}  style={{backdropFilter: 'blur(100px)'}} >
+        <div style={{display: "flex", justifyContent:"center", alignItems:"center", mb:"10px"}}>
+            <Heading as="h1" fontSize={"5rem"}   opacity={0.3} position="relative" align="center">
+                ABOUT
+            </Heading>
+            <p  style={{position:"absolute", fontSize:"7px", letterSpacing:"3px"}}>EXPERIENCES | WHO I AM | TECHNOLOGIES </p></div>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.200')} p={3} mb={6} mt={9} align="center" >
             Hello, I&apos;m a Full Stack Web Developer based in Tunisia <ReactCountryFlag countryCode="TN"/>
             </Box>

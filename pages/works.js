@@ -13,7 +13,7 @@ import Footer from "../components/footer";
 const Works= () => {
     return (
         <Layout >
-        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'blackAlpha.900')} p={6}  style={{backdropFilter: 'blur(100px)'}}>
+        <Container borderRadius="lg" bg={useColorModeValue('whiteAlpha.700', 'blackAlpha.900')} p={6}  style={{backdropFilter: 'blur(100px)'}}>
             <div style={{display: "flex", justifyContent:"center", alignItems:"center", mb:"10px"}}>
             <Heading as="h1" fontSize={"5rem"}   opacity={0.3} position="relative" align="center">
                 WORKS
