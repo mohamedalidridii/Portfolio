@@ -123,7 +123,7 @@ const HeadModel = () => {
     align="center"
     justify="center"
     left={['-3vw', "20rem", "35vw"]}
-    top={['2vh', 10, "2vh"]}
+    top={['5vh', 10, "2vh"]}
 
     >
         {loading && (
