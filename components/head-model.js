@@ -115,16 +115,15 @@ const HeadModel = () => {
     style={{zIndex:"-1"}}
     mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
-    w={["100vw", "30rem", "100vw/5"]}
-    h={["80vh", "30rem", "30rem"]}
+    w={["100vw", "30rem", "100vw"]}
+    h={["80vh", "30rem", "100vh*3"]}
     position="absolute"
-      display="flex"
+    display="flex"
     flexDirection="column"
     align="center"
     justify="center"
     left={['-3vw', "20rem", "35vw"]}
     top={['5vh', 10, "2vh"]}
-
     >
         {loading && (
             <Spinner size="xl" position="absolute" left="50%" top="50%" ml="calc(0px - var(--spinner-size) / 2" mt="calc(0px- var(--spinner-size)" />
