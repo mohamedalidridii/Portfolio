@@ -53,7 +53,7 @@ const HeadModel = () => {
 
             // 640 -> 240
             // 8 -> 6
-            const scale = scH * 0.0007 + 0.001
+            const scale = scH * 0.0005 + 0.001
             
             const camera = new THREE.OrthographicCamera(
                 scale, -scale, scale, -scale, 0.001, 50000
@@ -62,7 +62,7 @@ const HeadModel = () => {
             camera.lookAt(target)
             setCamera(camera)
 
-            const ambientLight = new THREE.AmbientLight(0xcccccc, 3)
+            const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
             scene.add(ambientLight)
             const controls = new OrbitControls (camera, renderer.domElement)
             controls.autoRotate = true
@@ -116,13 +116,13 @@ const HeadModel = () => {
     mt={["0rem", '-3.75rem', '0rem']}
     mb={['0rem', '-8.75rem', '0rem']}
     w={["100vw", "30rem", "60vw"]}
-    h={["80vh", "30rem", "100vh"]}
+    h={["70vh", "30rem", "100vh"]}
     position="absolute"
     display="flex"
     flexDirection="column"
     align="center"
     justify="center"
-    left={['-3vw', "20rem", "0vw"]}
+    // left={['-3vw', "20rem", "0vw"]}
     top={['5vh', 10, "2vh"]}
     >
         {loading && (

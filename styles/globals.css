@@ -1,0 +1,27 @@
+canvas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 4rem;
+    top: -3rem;
+}
+@media (min-width: 1200px) {
+    canvas{
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        left: -12rem;
+        top: -12rem;
+    }
+}
+@media (max-width: 600px) {
+    canvas{
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        left: -1rem;
+        top: 2rem;
+
+    }
+}
