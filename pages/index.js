@@ -14,7 +14,7 @@ const Page = () =>{
         <Container mt={40}>
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
-                    <Heading as="h1"  variant="page-title" position="relative" fontSize={["5.5vh","10vh", "5vh"]} align="center" mt={"8rem"} style={{zIndex:"-2", display:"flex", alignContent:"center", justifyContent:"center"}}>
+                    <Heading as="h1"  variant="page-title" position="relative" fontSize={["9vw","4vw", "2.5vw"]} align="center" mt={"3rem"} style={{zIndex:"-2", display:"flex", alignContent:"center", justifyContent:"center"}}>
                         Mohamed Ali Dridi
                     </Heading>
                     <p  style={{zIndex:"1", fontSize:"1.5vh", letterSpacing:"3.5px"}} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.700')} align="center">3D Artist | Technologist | Developer</p>
@@ -29,7 +29,7 @@ const Page = () =>{
                             3D experience
                             </Button></Link>    
                 </Box>
-                <Box align="center" mt={"2rem"}>
+                <Box align="center" mt={"2rem"} >
                     <Link href="/works">
                         <Button
                         rightIcon={<ChevronRightIcon />} 

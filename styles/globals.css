@@ -11,8 +11,8 @@ canvas{
         position: relative;
         justify-content: center;
         align-content: center;
-        left: -12rem;
-        top: -12rem;
+        left: -7rem;
+        top: -9rem;
     }
 }
 @media (max-width: 600px) {
