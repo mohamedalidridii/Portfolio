@@ -126,7 +126,7 @@ const HeadModel = () => {
     top={['5vh', 10, "2vh"]}
     >
         {loading && (
-            <Spinner size="xl" position="absolute" left="50%" top="50%" ml="calc(0px - var(--spinner-size) / 2" mt="calc(0px- var(--spinner-size)" />
+            <Spinner size="xl" position="absolute" left="20%" top="50%" ml="calc(0px - var(--spinner-size) / 2" mt="calc(0px- var(--spinner-size)" />
         )}
         </Box>
 )}
