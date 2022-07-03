@@ -8,7 +8,7 @@ function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x-1, 4))
 }
 const HeadModel = () => {
-    const headModel =`/portfolioProfile${useColorModeValue('', '4')}.glb`
+    const headModel = "/portfolioProfile4.glb"
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
