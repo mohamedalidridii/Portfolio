@@ -3,7 +3,7 @@ import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoFacebook, IoLogoLin
 import NextLink from 'next/link';
 const Footer = () => {
   return (
-    <Box align="center" opacity={0.8} fontSize="sm" position="relative" bottom={-4}>
+    <Box align="center" opacity={0.8} fontSize="sm" position="relative" bottom={1}>
                         <Box gap={3} mt={"15vh"} position="relative">
                 <Flex gap={10} align="center" justify="center" >
                         <NextLink href="https://www.linkedin.com/in/med-ali-dridi/" key={"li"} >
