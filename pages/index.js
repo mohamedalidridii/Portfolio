@@ -14,13 +14,13 @@ const Page = () =>{
         <Container mt={40}>
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
-                    <Heading as="h1"  variant="page-title" position="relative" align="center" style={{zIndex:"-2", fontSize:"5vh"}}>
+                    <Heading as="h1"  variant="page-title" position="relative" fontSize={["5.5vh","10vh", "5vh"]} align="center" mt={"8rem"} style={{zIndex:"-2", display:"flex", alignContent:"center", justifyContent:"center"}}>
                         Mohamed Ali Dridi
                     </Heading>
-                    <p  style={{zIndex:"1", fontSize:"10px", letterSpacing:"3.5px"}} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.700')} align="center">3D Artist | Technologist | Developer</p>
+                    <p  style={{zIndex:"1", fontSize:"1.5vh", letterSpacing:"3.5px"}} borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.700')} align="center">3D Artist | Technologist | Developer</p>
                 </Box>
             </Box>
-                <Box align="center" mt={10}>
+                <Box align="center" mt={"2rem"}>
                     <Link href="/interaction">
                         <Button
                         rightIcon={<MdTouchApp />} 
@@ -29,7 +29,7 @@ const Page = () =>{
                             3D experience
                             </Button></Link>    
                 </Box>
-                <Box align="center" mt={5}>
+                <Box align="center" mt={"2rem"}>
                     <Link href="/works">
                         <Button
                         rightIcon={<ChevronRightIcon />} 
