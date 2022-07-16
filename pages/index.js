@@ -38,6 +38,15 @@ const Page = () =>{
                             My Portfolio
                             </Button></Link>    
                 </Box>
+                <Box align="center" mt={"2rem"} >
+                    <Link href="https://docs.google.com/document/d/1ObTI79yMYnvKtkYQz9R0h1k9SHUpfVmf/edit?usp=sharing&ouid=100389710131393096893&rtpof=true&sd=true">
+                        <Button
+                        rightIcon={<ChevronRightIcon />} 
+                        bg={useColorModeValue('blackAlpha.800', 'white')}
+                        color={useColorModeValue('white', 'black')}>
+                            My Resume
+                            </Button></Link>
+                </Box>
         </Container>
         <Footer/>
         </Layout>

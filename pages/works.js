@@ -24,7 +24,7 @@ const Works= () => {
                 Development
             </Heading>
                 <Section>
-                <Meta>Notice:</Meta>All Data are available upon request: mohamedali.dridi1@esprit.tn<br/><br/>
+                <Meta>Notice:</Meta>All Data are available upon request: mouhamedalidridi.dev@gmail.com<br/><br/>
                     <WorkGridItem id="brides_secrets" title="Bride&apos;s Secrets" thumbnail={ThumbBridesSecrets} key={"tazuri"}>
                          A fully responsive Website for clothing store to showcase their marchandise, this web site connected with content management system 
                          to easy create, modify or delete a product.
