@@ -39,7 +39,7 @@ const Page = () =>{
                             </Button></Link>    
                 </Box>
                 <Box align="center" mt={"2rem"} >
-                    <Link href="https://docs.google.com/document/d/1ObTI79yMYnvKtkYQz9R0h1k9SHUpfVmf/edit?usp=sharing&ouid=100389710131393096893&rtpof=true&sd=true">
+                    <Link href="https://drive.google.com/file/d/1DLZDVc7qjITBo0gdi6U1N1awWgFNmLQn/view?usp=sharing">
                         <Button
                         rightIcon={<ChevronRightIcon />} 
                         bg={useColorModeValue('blackAlpha.800', 'white')}
