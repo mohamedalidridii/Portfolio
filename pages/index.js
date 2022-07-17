@@ -29,7 +29,7 @@ const Page = () =>{
                             3D experience
                             </Button></Link>    
                 </Box>
-                <Box align="center" mt={"2rem"} >
+                <Box align="center" mt={"2.5rem"} >
                     <Link href="/works">
                         <Button
                         rightIcon={<ChevronRightIcon />} 
@@ -38,7 +38,7 @@ const Page = () =>{
                             My Portfolio
                             </Button></Link>    
                 </Box>
-                <Box align="center" mt={"2rem"} >
+                <Box align="center" mt={"1rem"} >
                     <Link href="https://drive.google.com/file/d/1DLZDVc7qjITBo0gdi6U1N1awWgFNmLQn/view?usp=sharing">
                         <Button
                         rightIcon={<ChevronRightIcon />} 
